@@ -1,0 +1,18 @@
+I"ÿ(function() {
+  $(document).on('turbolinks:load', function() {
+    $('#jobbutton').on('click', function() {
+      $('#boat').val();
+      return window.addboatsbtn = $(this).closest(".jobinfo");
+    });
+    $('#boatform').on("ajax:success", function(e) {
+      return console.log("Hello");
+    }).on("ajax:error", function(e, data, status, xhr) {
+      return console.log("Hi");
+    });
+    return $('#boat').on('change', function() {
+      return $('.boatid').val($(this).val());
+    });
+  });
+
+}).call(this);
+:ET

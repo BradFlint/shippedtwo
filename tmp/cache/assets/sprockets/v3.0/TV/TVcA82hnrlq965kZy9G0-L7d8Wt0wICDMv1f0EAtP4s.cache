@@ -1,0 +1,7 @@
+I"Œ(function() {
+  $(document).on('turbolinks:load', function() {
+    return $('#jobbutton').on('click', function() {});
+  });
+
+}).call(this);
+:ET

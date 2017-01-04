@@ -1,2 +1,37 @@
 <h1>Boats#new</h1>
 <p>Find me in app/views/boats/new.html.erb</p>
+
+ <!-- form to create an new boat -->
+
+<%= form_for @boat, { :multipart => true } do |f| %>
+ <%= f.file_field :avatar %>
+
+    <!-- boat's name -->
+  <div class="field"> 
+    <%= f.label :name, "Boat Name" %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+<!-- number of containers boat can hold -->
+  <div class="field">
+    <%= f.label :containers, "Number of containers can hold" %><br />
+    <%= f.text_field :containers %>
+  </div>
+  <!-- boat's location in drop down -->
+  <%= f.label :location, "Location" %><br />
+  <%= f.select :location, ["Boston", "London", "Los Angeles", "Madrid", "New York", "Sydney", "Tokyo"] %>
+  
+  <div class="actions">
+    <%= f.submit "Create" %>
+  </div>
+
+  <% if @boat.errors.full_messages.any? %>   
+  	<ul>     
+  		<% @boat.errors.full_messages.each do |error_message| %>       
+  		<li><%= error_message %></li> <br />     
+  		<% end %>   
+  	</ul> 
+  <% end %>
+<% end %>
+
+
+

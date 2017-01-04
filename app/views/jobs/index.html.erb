@@ -1,2 +1,6 @@
-<h1>Jobs#index</h1>
-<p>Find me in app/views/jobs/index.html.erb</p>
+
+<!-- shows all of the jobs -->
+<%= select_tag "boat", options_for_select(@boats.collect{|boat| ["#{boat.name} Containers: #{boat.containers}", boat.id ]}) %>
+<% @jobs.each do |job| %>
+	<%= render "job", job: job %>
+<% end %>

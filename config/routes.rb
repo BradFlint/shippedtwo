@@ -1,25 +1,9 @@
 Rails.application.routes.draw do
- 
-
-  get 'jobs/index'
-
-  get 'jobs/new'
-
-  get 'jobs/edit'
-
-  get 'jobs/show'
-
-  get 'jobs/create'
-
-  get 'jobs/update'
-
-  get 'jobs/destroy'
-
-  get 'home/index'
-
-  devise_for :views
-
+  resources :boats
+  resources :jobs
   
+  post '/boatjobs' => "boatjobs#create"
+
   devise_for :users, controllers: {
         sessions: 'users/sessions',
         registrations: 'users/registrations'

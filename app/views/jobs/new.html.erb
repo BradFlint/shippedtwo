@@ -1,2 +1,50 @@
 <h1>Jobs#new</h1>
 <p>Find me in app/views/jobs/new.html.erb</p>
+
+<!-- form to create a job -->
+<%= form_for @job do |f| %>
+<!-- job's name -->
+  <div class="field">
+    <%= f.label :name, "Name" %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+<!-- job's desc -->
+  <div class="field">
+    <%= f.label :description, "Description" %><br />
+    <%= f.text_field :description %>
+  </div>
+<!-- job's cost -->
+  <div class="field">
+    <%= f.label :cost, "Cost" %><br />
+    <%= f.text_field :cost %>
+  </div>
+<!-- number of containers job requires-->
+  <div class="field">
+    <%= f.label :containers, "Containers Needed" %><br />
+    <%= f.text_field :containers %>
+  </div>
+<!-- job's origin-->
+  <div class="field">
+    <%= f.label :origin, "Origin" %><br />
+    <%= f.select :origin, ["Boston", "London", "Los Angles", "Madrid", "Sydney", "Tokyo"] %>
+  </div>
+<!-- job's destination -->
+  <div class="field">
+    <%= f.label :destination, "Destination " %><br />
+    <%= f.select :destination, ["Los Angles", "Boston", "London", "Madrid", "Sydney", "Tokyo"] %>
+  </div>
+
+  <%= hidden_field_tag "boat_id", @boat.id %>
+  
+  <div class="actions">
+    <%= f.submit "Create job" %>
+  </div>
+
+  <% if @job.errors.full_messages.any? %>   
+  	<ul>     
+  		<% @job.errors.full_messages.each do |error_message| %>       
+  			<li><%= error_message %></li> <br />     
+  		<% end %>   
+  	</ul> 
+  <% end %>
+<% end %>

@@ -3,21 +3,23 @@
   <head>
     <title>Shipped</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  <% if current_user %>
-  			<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-  			<%= link_to "Settings", edit_user_registration_path %>
-  		<% else %>
-  			<%= link_to "Sign In", new_user_session_path %>
-  			<%= link_to "Create Account", new_user_registration_path %>
-  		<% end %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+    <% if current_user %>
+    			<%= link_to "Sign Out", destroy_user_session_path, method: :delete %> <!-- links to user has when signed in -->
+    			<%= link_to "Settings", edit_user_registration_path %>
+    			<%= link_to "All Boats", boats_path %>
+    			<%= link_to "All Jobs", jobs_path %>
+    			<%= link_to "New Boat", new_boat_path %> 
+    		<% else %>
+    			<%= link_to "Sign In", new_user_session_path %> <!-- before user signed in -->
+    			<%= link_to "Create Account", new_user_registration_path %>
+    <% end %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

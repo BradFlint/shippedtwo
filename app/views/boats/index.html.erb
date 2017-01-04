@@ -1,2 +1,14 @@
 <h1>Boats#index</h1>
 <p>Find me in app/views/boats/index.html.erb</p>
+    
+    <!-- lists all of the boats -->
+<% @boats.each do |boat| %>
+	<div class="boat_wrapper">
+		<h2 class="title"><%= boat.name %></h2>
+		<p class="containers">Containers <%= boat.containers %></p>
+		<p class="location">Location <%= boat.location %></p>
+		<%= image_tag boat.avatar.url(:thumb) %>
+		<%= link_to "New Job", new_job_path(boat_id: boat.id) %>
+		<hr>
+	</div>
+<% end %>

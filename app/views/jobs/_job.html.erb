@@ -1,0 +1,23 @@
+<div class="jobs_wrapper">    
+	<h2 class="jobtitle"><%= job.name %></h2>
+	<p class="jobdescription">Description: <%= job.description %></p>
+	<p class="jobcost">Cost: <%= job.cost %></p>
+	<p class="jobcontainers">Containers Needed: <%= job.containers %></p>
+	<p class="joborigin">Origin: <%= job.origin %></p>
+	<p class="jobdestination">Destination: <%= job.destination %></p>
+	
+<div class="jobs_wrapper">     <!-- obtains the boat and job ids -->
+	<%= hidden_field_tag "job_id", "", id: "#{job.id}" %> 
+	<%= form_tag '/boatjobs', method: :post, remote: :true, id: "boatform" do %>
+		<%= hidden_field_tag "boat_id", "", class: "boatid" %>
+		<%= hidden_field_tag "job_id", job.id, class: "jobid" %>
+		<%= submit_tag "Add boats", class: "addboatbtn" %>
+	<% end %>
+	<br>
+	<% job.boats.each do |boat| %>
+		<%= boat.name %>  <!-- displays the boats assigned to a job -->
+	<% end %>
+	<hr>
+</div>
+	
+

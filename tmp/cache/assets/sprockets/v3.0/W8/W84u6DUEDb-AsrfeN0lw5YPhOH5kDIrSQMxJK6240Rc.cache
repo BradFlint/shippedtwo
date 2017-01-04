@@ -1,0 +1,15 @@
+I"«(function() {
+  $(document).on('turbolinks:load', function() {
+    $('#jobbutton').on('click', function() {
+      $('#boat').val();
+      return window.add_boats_btn = $(this).closest('.jobinfo');
+    });
+    return $('#boatform').on("ajax:success", function(e) {
+      return console.log("Hello");
+    }).on("ajax:error", function(e, data, status, xhr) {
+      return console.log("You're cool");
+    });
+  });
+
+}).call(this);
+:ET
