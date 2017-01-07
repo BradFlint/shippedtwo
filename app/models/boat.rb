@@ -3,6 +3,7 @@ class Boat < ApplicationRecord
 	has_many :jobs, through: :boatjobs
 	has_many :boatjobs
 
+	validates_inclusion_of :location, :in => ['Boston', 'London', 'Los Angeles', 'Madrid', 'New York', 'Sydney', 'Tokyo'] 
 	validates :name, uniqueness: { :message => "That boat name has already been taken." }
 
 	has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png" 

@@ -10846,3 +10846,703 @@ puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.4ms)
+Started GET "/" for ::1 at 2017-01-06 20:27:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 468ms (Views: 438.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-01-06 20:27:18 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Boat::Boston):
+  
+app/models/boat.rb:7:in `<class:Boat>'
+app/models/boat.rb:1:in `<top (required)>'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.2ms)
+Started GET "/" for ::1 at 2017-01-06 20:27:28 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs" for ::1 at 2017-01-06 20:27:31 -0700
+Processing by JobsController#index as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Boat::Boston):
+  
+app/models/boat.rb:7:in `<class:Boat>'
+app/models/boat.rb:1:in `<top (required)>'
+app/controllers/jobs_controller.rb:4:in `index'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.3ms)
+Started GET "/" for ::1 at 2017-01-06 20:27:34 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-01-06 20:27:46 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-01-06 20:27:47 -0700
+Processing by BoatsController#new as HTML
+  Rendering boats/new.html.erb within layouts/application
+  Rendered boats/new.html.erb within layouts/application (23.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 64.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-01-06 20:30:19 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected '{', expecting keyword_end
+...s London Madrid Sydney Tokyo) { :message => "Not a valid loc...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected '}', expecting keyword_end):
+  
+app/models/boat.rb:7: syntax error, unexpected '{', expecting keyword_end
+app/models/boat.rb:7: syntax error, unexpected '}', expecting keyword_end
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.0ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:31:26 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...n: (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo) { :message => "Not a valid l...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected '}', expecting ')'
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:7: syntax error, unexpected '}', expecting ')'
+app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:31:57 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...n: (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo) #{ :message => "Not a valid ...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.5ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:32:20 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...n: (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo) #{ :message => "Not a valid ...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.4ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:32:41 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...n: (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo) 
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.0ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:33:32 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected =>
+	validates :location, in: => (Boston, London, Los Angeles...
+	                           ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...=> (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo) 
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:7: syntax error, unexpected =>
+app/models/boat.rb:7: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:7: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:10: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:35:00 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+	validates :location, in: => (Boston, London, Los Angeles...
+	                           ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...=> (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo) 
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:11: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:6: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:11: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.0ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:35:55 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+	validates :location, in: => (Boston London Los Angeles L...
+	                           ^):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.3ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:36:23 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Boat::Tokyo):
+  
+app/models/boat.rb:6:in `<class:Boat>'
+app/models/boat.rb:1:in `<top (required)>'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:37:03 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Boat::Sydney):
+  
+app/models/boat.rb:6:in `<class:Boat>'
+app/models/boat.rb:1:in `<top (required)>'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.1ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:37:53 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...s :location, in: [Boston London Los Angeles London Madrid Sy...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ']', expecting keyword_end
+...les London Madrid Sydney Tokyo] 
+...                               ^):
+  
+app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:6: syntax error, unexpected ']', expecting keyword_end
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.0ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:39:16 -0700
+Processing by BoatsController#new as HTML
+  Rendering boats/new.html.erb within layouts/application
+  Rendered boats/new.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 65.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-01-06 20:44:35 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+	validates :location, in: => (Boston London Los Angeles L...
+	                           ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ',', expecting keyword_end
+...es London Madrid Sydney Tokyo), :message => "location is not...
+...                               ^):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/models/boat.rb:6: syntax error, unexpected ',', expecting keyword_end
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:45:40 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+	validates :location, in: => (Boston, London, Los Angeles...
+	                           ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...=> (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo), :message => "location is no...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:11: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:6: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:11: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.3ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:46:43 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+..._inclusion_of :location, in: => (Boston, London, Los Angeles...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...=> (Boston, London, Los Angeles, London, Madrid, Sydney, Tok...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ')', expecting '='
+... London, Madrid, Sydney, Tokyo), :message => "location is no...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:11: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/models/boat.rb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/models/boat.rb:6: syntax error, unexpected ')', expecting '='
+app/models/boat.rb:11: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:49:57 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+..._inclusion_of :location, in: => ['Boston', 'London', 'Los An...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ')', expecting ']'
+...', 'Madrid', 'Sydney', 'Tokyo'), :message => "location is no...
+...                               ^):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/models/boat.rb:6: syntax error, unexpected ')', expecting ']'
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.9ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:50:33 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+..._inclusion_of :location, in: => ['Boston', 'London', 'Los An...
+...                               ^
+/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected ',', expecting keyword_end
+..., 'Madrid', 'Sydney', 'Tokyo'], :message => "location is not...
+...                               ^):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/models/boat.rb:6: syntax error, unexpected ',', expecting keyword_end
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.2ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:51:04 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+..._inclusion_of :location, in: => ['Boston', 'London', 'Los An...
+...                               ^):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.4ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:51:56 -0700
+Processing by BoatsController#new as HTML
+  Rendering boats/new.html.erb within layouts/application
+  Rendered boats/new.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 102ms (Views: 80.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-01-06 20:52:42 -0700
+Processing by BoatsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bradflint/Desktop/masterfolder/shippedtwo/app/models/boat.rb:6: syntax error, unexpected =>
+..._inclusion_of :location, in: => ['Boston', 'London', 'Los An...
+...                               ^):
+  
+app/models/boat.rb:6: syntax error, unexpected =>
+app/controllers/boats_controller.rb:7:in `new'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.8ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:55:02 -0700
+Processing by BoatsController#new as HTML
+  Rendering boats/new.html.erb within layouts/application
+  Rendered boats/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 44.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/jobs" for ::1 at 2017-01-06 20:56:33 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mBoat Load (1.6ms)[0m  [1m[34mSELECT "boats".* FROM "boats"[0m
+  [1m[36mJob Load (1.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  [1m[36mBoat Load (1.7ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 1]]
+  Rendered jobs/_job.html.erb (60.3ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 2]]
+  Rendered jobs/_job.html.erb (2.1ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 3]]
+  Rendered jobs/_job.html.erb (1.7ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 4]]
+  Rendered jobs/_job.html.erb (1.8ms)
+  Rendered jobs/index.html.erb within layouts/application (92.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 143ms (Views: 125.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-01-06 20:57:09 -0700
+Processing by BoatsController#new as HTML
+  Rendering boats/new.html.erb within layouts/application
+  Rendered boats/new.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-01-06 20:57:28 -0700
+Processing by BoatsController#index as HTML
+  Rendering boats/index.html.erb within layouts/application
+  [1m[36mBoat Load (0.2ms)[0m  [1m[34mSELECT "boats".* FROM "boats"[0m
+  Rendered boats/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 37ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/thumb/missing.png" for ::1 at 2017-01-06 20:57:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [33 times] (15.2ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.7ms)
+Started GET "/boats/new" for ::1 at 2017-01-06 20:57:32 -0700
+Processing by BoatsController#new as HTML
+  Rendering boats/new.html.erb within layouts/application
+  Rendered boats/new.html.erb within layouts/application (3.9ms)
+Started GET "/images/thumb/missing.png" for ::1 at 2017-01-06 20:57:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [33 times] (8.3ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/bradflint/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.9ms)
+Started GET "/jobs" for ::1 at 2017-01-06 20:57:37 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mBoat Load (0.4ms)[0m  [1m[34mSELECT "boats".* FROM "boats"[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 1]]
+  Rendered jobs/_job.html.erb (5.3ms)
+  [1m[36mBoat Load (0.2ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 2]]
+  Rendered jobs/_job.html.erb (3.3ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 3]]
+  Rendered jobs/_job.html.erb (1.8ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 4]]
+  Rendered jobs/_job.html.erb (1.8ms)
+  Rendered jobs/index.html.erb within layouts/application (21.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 60ms (Views: 54.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/jobs" for ::1 at 2017-01-06 20:58:56 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mBoat Load (0.4ms)[0m  [1m[34mSELECT "boats".* FROM "boats"[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  [1m[36mBoat Load (0.2ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 1]]
+  Rendered jobs/_job.html.erb (13.5ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 2]]
+  Rendered jobs/_job.html.erb (2.0ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 3]]
+  Rendered jobs/_job.html.erb (1.8ms)
+  [1m[36mBoat Load (0.1ms)[0m  [1m[34mSELECT "boats".* FROM "boats" INNER JOIN "boatjobs" ON "boats"."id" = "boatjobs"."boat_id" WHERE "boatjobs"."job_id" = ?[0m  [["job_id", 4]]
+  Rendered jobs/_job.html.erb (2.3ms)
+  Rendered jobs/index.html.erb within layouts/application (41.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 78.4ms | ActiveRecord: 3.4ms)
+
+
